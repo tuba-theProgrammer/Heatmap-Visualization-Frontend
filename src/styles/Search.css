@@ -1,0 +1,35 @@
+/* Search.css */
+
+.leaflet-control.geosearch {
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .leaflet-control.geosearch input {
+    border: none;
+    outline: none;
+    border-radius: 50px 0 0 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 250px;
+  }
+  
+  .leaflet-control.geosearch a {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 50px 50px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .leaflet-control.geosearch a:hover {
+    background-color: #45a049;
+  }
+  
