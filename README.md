@@ -1,6 +1,4 @@
 
-# Getting Started with Create React App
-
 # Heat Map Visualization Frontend
 
 ## Overview
