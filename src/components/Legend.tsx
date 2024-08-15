@@ -14,35 +14,32 @@ const Legend: React.FC = () => {
         fontSize: '12px',
       }}
     >
-    
-      <div
-        className="legend-items"
-        style={{
-          
-          display: 'flex',
-          flexDirection: 'row',
-        }}
-      >
-          <h4
+      <h4
         className="legend-title"
         style={{
-          
           fontSize: '14px',
           marginBottom: '5px',
-          padding:'5px',
-          borderRight:'2px solid grey'
-
+          padding: '5px',
+          borderBottom: '2px solid grey',
+          textAlign: 'center',
         }}
       >
         Rank (°C)
       </h4>
+      <div
+        className="legend-items"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(6, auto)',
+          gap: '5px',
+          marginTop: '5px',
+        }}
+      >
         <div
           className="legend-item"
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
-            padding:'5px',
           }}
         >
           <span
@@ -62,7 +59,6 @@ const Legend: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
           }}
         >
           <span
@@ -82,7 +78,6 @@ const Legend: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
           }}
         >
           <span
@@ -102,7 +97,6 @@ const Legend: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
           }}
         >
           <span
@@ -122,7 +116,6 @@ const Legend: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
           }}
         >
           <span
@@ -142,7 +135,6 @@ const Legend: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '3px',
           }}
         >
           <span

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Circle, Popup } from 'react-leaflet';
-import { LatLngExpression } from 'leaflet'; // Import this type for lat-lon array
+import { LatLngExpression } from 'leaflet';
 import { fetchTemperatures } from '../services/temperatureService';
 import { Location } from '../types/Location';
 import Legend from './Legend';
@@ -14,7 +14,7 @@ const Heatmap: React.FC = () => {
   useEffect(() => {
     const getTemperatures = async () => {
       const data = await fetchTemperatures();
-      console.log(data)
+      console.log(data);
       setLocations(data);
     };
     getTemperatures();
@@ -33,7 +33,11 @@ const Heatmap: React.FC = () => {
 
   return (
     <div className="heatmap-container">
-      <MapContainer center={mapCenter} zoom={2} style={{ height: '100vh', width: '100%' }}>
+      <MapContainer
+        center={mapCenter}
+        zoom={2}
+        style={{ height: '100%', width: '100%' }}
+      >
         <TileLayer
           attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -42,7 +46,7 @@ const Heatmap: React.FC = () => {
           <Circle
             key={`${location.lat}-${location.lon}`}
             center={[location.lat, location.lon] as LatLngExpression}
-            radius={150000} 
+            radius={150000}
             fillColor={getColor(location.temperature)}
             color={getColor(location.temperature)}
             fillOpacity={0.7}

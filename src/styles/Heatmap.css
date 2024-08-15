@@ -1,36 +1,21 @@
+/* Heatmap.css */
+
 .heatmap-container {
   position: relative;
-}
-
-.legend {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-.legend h4 {
-  margin: 0;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.legend-items {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.legend-items div {
-  display: flex;
-  align-items: center;
+@media (max-width: 768px) {
+  .heatmap-container {
+    height: 80vh; /* Adjust height for smaller screens */
+  }
 }
 
-.legend-items div span {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 5px;
+@media (max-width: 480px) {
+  .heatmap-container {
+    height: 70vh; /* Further adjust height for very small screens */
+  }
 }
