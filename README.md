@@ -1,6 +1,32 @@
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Heat Map Visualization Frontend
+
+## Overview
+
+This project is a web-based heatmap visualization application designed to showcase the integration of a data source with a heatmap visualization. The objective is to assess the skills in front-end development and their ability to integrate data sources to create interactive visualizations.
+
+## Tech Stack
+
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Superset of JavaScript with static typing.
+- **Leaflet**: Open-source JavaScript library for interactive maps.
+- **Axios**: Promise-based HTTP client for making API requests.
+
+## Features
+
+- **Interactive Heatmap**: Visualize data on a heatmap with different colors representing varying intensities.
+- **Data Integration**: Fetch data from a specified API or data source and display it on the heatmap.
+- **Responsive Design**: Ensure the application is usable on various screen sizes.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tuba-theProgrammer/heatmap-visualization-frontend.git
+   cd heatmap-visualization-frontend
+
 
 ## Available Scripts
 
